@@ -1,0 +1,63 @@
+.banner
+	width: 100%
+	position: relative
+	overflow: hidden
+	.banner-container
+		width: 100%
+		height: inherit
+
+.banner-img
+	position: relative
+	top: 0
+	left: 0
+
+.banner-img-shadow
+	position: absolute
+	top: 0
+	left: -600px
+	height: 1080px
+	width: 80%
+	z-index: 1
+	background-color: black
+	opacity: 0.5
+	transform: skewX(-35deg)
+
+.banner-text
+	position: absolute
+	top: 60px
+	z-index: 2
+	padding: 200px 150px
+
+.bth-first, .bth-second
+	font-family: $banner-font
+	font-weight: 900
+	font-size: 130px
+	margin: 0
+	padding: 0
+	text-transform: uppercase
+	color: $banner-font-color
+
+.bth-second
+	color: $banner-font-color2
+
+.banner-text-content
+	font-family: $banner-font
+	font-weight: 500
+	color: $banner-font-color
+	font-size: 20px
+	text-transform: uppercase
+	padding: 0
+	margin: 0
+
+.banner-btn
+	background-color: $banner-font-color2
+	font-family: $banner-font
+	font-weight: 500
+	color: $banner-font-color
+	text-transform: uppercase
+	border: 0
+	margin-top: 30px
+	padding: 10px 30px
+	&:hover
+		background-color: darken($banner-font-color2, 5%)
+		cursor: pointer
